@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.ball {
+    display: grid;
+    place-content: center center;
+    background-color: black;
+    border-radius: 50%;
+    /* height: 100vw; */
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+input[type="text"] {
+    font-size: 30px;
+    padding: 10px
+}
+
+button {
+    font-size: 30px;
+}
+
+td {
+    font-size: 20px;
+}
