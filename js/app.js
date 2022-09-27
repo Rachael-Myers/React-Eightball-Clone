@@ -117,7 +117,10 @@ function refreshTable() {
   results.forEach((data) => {
     const $row = document.createElement("tr");
 
-    $row.innerHTML = `<td>${data.id}</td> <td>${data.question}</td> <td>${data.answer}</td>`;
+    $row.innerHTML = `<td>${data.id}</td> <td></td> <td>${data.answer}</td>`;
+
+    const td = $row.querySelector("td:nth-of-type(2)");
+    td.textContent = data.question;
 
     $table.append($row);
   });
